@@ -25,7 +25,8 @@ for i in "$@"; do
     then
         out_set=False
         OUT_PREFIX=`readlink -f "$i"`
-        OUT_DIR=`dirname "$OUT_PREFIX"`
+        #OUT_DIR=`dirname "$OUT_PREFIX"`, should not be dirname because prefix is already a dir
+        OUT_DIR=$OUT_PREFIX
         OUT_NAME=`basename "$OUT_PREFIX"`
         OUT_ARG=$(printf %q "/home/output/$OUT_NAME")
         # OUT_ARG=\"/home/output/$OUT_NAME\"
