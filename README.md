@@ -268,7 +268,7 @@ This file describes the amplicon structure predicted by AA in the form of simple
     * `{END}`: Coordinate of the last basepair
 2. Segments section: List of segments used in the structures. Tab-separated fields:
     * `Segment`: keyword
-    * `{IntervalID}`: ID of the segment 1, 2, etc. 
+    * `{SegmentID}`: ID of the segment 1, 2, etc. 
     * `{CHROM}`: Chromosome name
     * `{START}`: Coordinate of the first basepair
     * `{END}`: Coordinate of the last basepair
